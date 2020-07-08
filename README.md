@@ -1,5 +1,5 @@
 # lab02-unit-test
-ATM Console App for Unit Testing Lab
+ATM Console App for Unit Test Lab
 lab02-unit-test
 Author: Kamit satkeev
 Description
@@ -14,9 +14,9 @@ Select File -> Open -> Project/Solution
 
 Next navigate to the location where you cloned the repository.
 
-Double-click on the lab02-unit-testing directory.
+Double-click on the lab02-unit-test directory.
 
-Then select and open lab02-unit-testing.sln
+Then select and open lab02-unit-test.sln
 
 Visuals
 Application Start
@@ -26,3 +26,10 @@ Application Start
 display balance 
 ![](https://github.com/Satkeev/lab02-unit-test/blob/master/lab02-unit-test/assets/Annotation%202020-07-07%20172418.png)
 
+![](https://github.com/Satkeev/lab02-unit-test/blob/master/lab02-unit-test/assets/Annotation%202020-07-07%20172825.png)
+
+![](https://github.com/Satkeev/lab02-unit-test/blob/master/lab02-unit-test/assets/Annotation%202020-07-07%20173006.png)
+
+![](https://github.com/Satkeev/lab02-unit-test/blob/master/lab02-unit-test/assets/Annotation%202020-07-07%20173120.png)
+
+![](https://github.com/Satkeev/lab02-unit-test/blob/master/lab02-unit-test/assets/Annotation%202020-07-07%20173214.png)
