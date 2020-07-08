@@ -7,10 +7,7 @@ namespace lab02_unit_test
         {
             public static decimal balance = 500m;
 
-            /// <summary>
-            /// Handles control flow of user interaction and calls helper methods
-            /// </summary>
-            /// <param name="args">string array</param>
+            
             public static void Main(string[] args)
             {
                 Console.WriteLine("Welcome to the ATM game!");
@@ -23,19 +20,19 @@ namespace lab02_unit_test
 
                 try
                 {
-                    // Set boolean to true for keeping program running
+                    // Set boolean to true
                     bool runATM = true;
 
-                    string userAction = Console.ReadLine();
+                    string userAct = Console.ReadLine();
 
-                    // Use while loop to continue allowing user actions while boolean set to true
+                    // While loop for allowing user actions while boolean set to true
                     while (runATM == true)
                     {
-                        switch (userAction)
+                        switch (userAct)
                         {
                             case "1":
                                 Console.WriteLine("You've selected \"View balance\".");
-                                DisplayBalance();
+                                DispBalance();
                                 break;
 
                             case "2":
@@ -69,7 +66,7 @@ namespace lab02_unit_test
                                 break;
                         }
 
-                        // Give user option to end ATM session or initiate new session
+                        // User option to end ATM session or for start a new session
                         Console.WriteLine(" ");
                         Console.WriteLine("To do a new ATM action, type the number of the action you'd like to do.\n" +
                             "Or hit Enter to exit the program. ");
@@ -77,11 +74,11 @@ namespace lab02_unit_test
                             "   2. Withdraw funds\n" +
                             "   3. Deposit funds\n" +
                             "   4. Quit ATM session");
-                        userAction = Console.ReadLine();
-                        if (userAction != "1" &&
-                            userAction != "2" &&
-                            userAction != "3" &&
-                            userAction != "4")
+                        userAct = Console.ReadLine();
+                        if (userAct != "1" &&
+                            userAct != "2" &&
+                            userAct != "3" &&
+                            userAct != "4")
                         {
                             runATM = false;
                         }
@@ -98,20 +95,18 @@ namespace lab02_unit_test
                 Console.ReadLine();
             }
 
-            /////////////////////////////
-            // Helper methods
-            /////////////////////////////
+            
 
             /// <summary>
-            /// Displays account balance to user in console
+            /// Account balance to user in console
             /// </summary>
-            public static void DisplayBalance()
+            public static void DispBalance()
             {
                 Console.WriteLine($"Your account balance is {balance:C2}.");
             }
 
             /// <summary>
-            /// Updates account balance to reflect user deposit
+            /// Account balance update to display user deposit
             /// </summary>
             /// <param name="amountToWithdraw">User input specifying amount to withdraw</param>
             /// <returns>Returns an updated account balance as a decimal</returns>
@@ -124,7 +119,7 @@ namespace lab02_unit_test
                 {
                     if (newBalance > 0)
                     {
-                        // Attempted update to balance
+                        // update to balance
                         balance = newBalance;
                         Console.WriteLine($"You've successfully withdrawn {amountToWithdraw:C2}.");
                         return newBalance;
@@ -143,7 +138,7 @@ namespace lab02_unit_test
             }
 
             /// <summary>
-            /// Updates account balance to reflect user withdrawal
+            /// Account balance update for display user withdrawal
             /// </summary>
             /// <param name="amountToDeposit"></param>
             /// <returns>Returns an updated account balance as a decimal</returns>
