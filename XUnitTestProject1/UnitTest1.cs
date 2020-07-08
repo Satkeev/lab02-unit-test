@@ -14,50 +14,79 @@ namespace XUnitTestProject1
         {
             // Arrange
             // Set initial account balance that Program.WithdrawFunds below will use
-            balance = 1000m;
+            balance = 800m;
 
 
             // Act
             decimal newBalanceAfterWithdraw = WithdrawFunds(50m);
 
             // Assert
-            Assert.Equal(950m, newBalanceAfterWithdraw);
+            Assert.Equal(750m, newBalanceAfterWithdraw);
+        }
+
+
+        /// <summary>
+        /// Tests whether user can overdraw account
+        /// </summary>
+        [Fact]
+
+
+
+        public void checkOverdrawAccount()
+        {
+            // Arrange
+            balance = 400m;
+
+
+            // Act
+            decimal balanceAfterOverdraw = WithdrawFunds(500m);
+
+
+            // Assert
+            Assert.NotEqual(-100m, balanceAfterOverdraw);
+        }
+
+
+        /// <summary>
+        /// Tests whether can return updated balance after deposit
+        /// </summary>
+        [Fact]
+        public void NewBalanceFromDepositFunds()
+        {
+            // Arrange
+            balance = 800m;
+
+
+            // Act
+            decimal newBalanceAfterDeposit = DepositFunds(200m);
+
+
+            // Assert
+            Assert.Equal(1000m, newBalanceAfterDeposit);
+        }
+
+        /// <summary>
+        /// Tests whether user can deposit negative amount
+        /// </summary>
+        [Fact]
+        public void CantDepositNegativeAmount()
+        {
+            // Arrange
+            balance = 200m;
+
+
+            // Act
+            decimal balanceAfterNegativeDeposit = DepositFunds(-10m);
+
+
+            // Assert
+            Assert.NotEqual(190m, balanceAfterNegativeDeposit);
         }
     }
 }
-/// <summary>
-/// Tests whether user can overdraw account
-/// </summary>
-[Fact]
-public void CannotOverdrawAccount()
-{
-    // Arrange
-    Program.balance = 500m;
+	
 
 
-    // Act
-    decimal balanceAfterOverdraw = Program.WithdrawFunds(600m);
+     
 
 
-    // Assert
-    Assert.NotEqual(-100m, balanceAfterOverdraw);
-}
-
-
-/// <summary>
-/// Tests whether can return updated balance after deposit
-/// </summary>
-[Fact]
-public void NewBalanceFromDepositFunds()
-{
-    // Arrange
-    balance = 1000m;
-
-
-    // Act
-    decimal newBalanceAfterDeposit = DepositFunds(200m);
-
-
-    // Assert
-    Assert.Equal(1200m, newBalanceAfterDeposit);
-}
