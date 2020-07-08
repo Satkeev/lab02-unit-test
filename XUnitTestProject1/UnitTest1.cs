@@ -7,13 +7,13 @@ namespace XUnitTestProject1
     public class UnitTest1
     {
         /// <summary>
-        /// Tests whether can return updated balance after withdrawal of funds
+        /// after withdrawal of funds balance test
         /// </summary>
         [Fact]
         public void checkBalanceWithdrawFunds()
         {
             // Arrange
-            // Set initial account balance that Program.WithdrawFunds below will use
+            // account balance initialization that Program.WithdrawFunds below will use
             balance = 800m;
 
 
@@ -26,7 +26,7 @@ namespace XUnitTestProject1
 
 
         /// <summary>
-        /// Tests whether user can overdraw account
+        /// user can overdraw account test
         /// </summary>
         [Fact]
 
@@ -48,7 +48,7 @@ namespace XUnitTestProject1
 
 
         /// <summary>
-        /// Tests whether can return updated balance after deposit
+        /// after deposit tests whether can return updated balance
         /// </summary>
         [Fact]
         public void NewBalanceFromDepositFunds()
@@ -66,12 +66,12 @@ namespace XUnitTestProject1
         }
 
         /// <summary>
-        /// Tests whether user can deposit negative amount
+        /// User can deposit negative amount test
         /// </summary>
         [Fact]
         public void CantDepositNegativeAmount()
         {
-            // Arrange
+            // Arrange 
             balance = 200m;
 
 
@@ -79,7 +79,7 @@ namespace XUnitTestProject1
             decimal balanceAfterNegativeDeposit = DepositFunds(-10m);
 
 
-            // Assert
+            // Assert testing
             Assert.NotEqual(190m, balanceAfterNegativeDeposit);
         }
     }
