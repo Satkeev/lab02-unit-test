@@ -1,22 +1,24 @@
-# lab02-unit-test
-ATM Console App for Unit Test Lab
-lab02-unit-test
-Author: Kamit satkeev
-Description
-This is a C# console app that simulates an ATM machine and lets the user interactively perform standard ATM operations such as view balance and withdraw funds. The user will also be able to do other mock ATM operations like add/deposit money. It anticipates and handles a variety of exceptions and was built using TDD principles.
+# lab02-unit-test  
+ATM Console App for Unit Test Lab  
+lab02-unit-test  
+Author: Kamit Satkeev  
+Description  
+This is a C# console app that simulates an ATM machine and lets the user interactively perform standard ATM  
+operations such as view balance and withdraw funds. The user will also be able to do other mock ATM operations  
+like add/deposit money. It anticipates and handles a variety of exceptions and was built using TDD principles.  
 
-Getting Started
-Clone this repository to your local machine.
+Getting Started  
+Clone this repository to your local machine.  
 
-$ git clone [repo url here]
-To run the program from Visual Studio:
-Select File -> Open -> Project/Solution
+$ git clone [repo url here]  
+To run the program from Visual Studio:  
+Select File -> Open -> Project/Solution  
 
-Next navigate to the location where you cloned the repository.
+Next navigate to the location where you cloned the repository.  
 
-Double-click on the lab02-unit-test directory.
+Double-click on the lab02-unit-test directory.  
 
-Then select and open lab02-unit-test.sln
+Then select and open lab02-unit-test.sln  
 
 Visuals
 Application Start
