@@ -25,4 +25,39 @@ namespace XUnitTestProject1
         }
     }
 }
-    
+/// <summary>
+/// Tests whether user can overdraw account
+/// </summary>
+[Fact]
+public void CannotOverdrawAccount()
+{
+    // Arrange
+    Program.balance = 500m;
+
+
+    // Act
+    decimal balanceAfterOverdraw = Program.WithdrawFunds(600m);
+
+
+    // Assert
+    Assert.NotEqual(-100m, balanceAfterOverdraw);
+}
+
+
+/// <summary>
+/// Tests whether can return updated balance after deposit
+/// </summary>
+[Fact]
+public void NewBalanceFromDepositFunds()
+{
+    // Arrange
+    balance = 1000m;
+
+
+    // Act
+    decimal newBalanceAfterDeposit = DepositFunds(200m);
+
+
+    // Assert
+    Assert.Equal(1200m, newBalanceAfterDeposit);
+}
