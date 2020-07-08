@@ -25,11 +25,11 @@ Application Start
 
 display balance 
 ![](https://github.com/Satkeev/lab02-unit-test/blob/master/lab02-unit-test/assets/Annotation%202020-07-07%20172418.png)
-
+withdraw funds
 ![](https://github.com/Satkeev/lab02-unit-test/blob/master/lab02-unit-test/assets/Annotation%202020-07-07%20172825.png)
-
+deposit funds
 ![](https://github.com/Satkeev/lab02-unit-test/blob/master/lab02-unit-test/assets/Annotation%202020-07-07%20173006.png)
-
+withdraw funds
 ![](https://github.com/Satkeev/lab02-unit-test/blob/master/lab02-unit-test/assets/Annotation%202020-07-07%20173120.png)
-
+quit app
 ![](https://github.com/Satkeev/lab02-unit-test/blob/master/lab02-unit-test/assets/Annotation%202020-07-07%20173214.png)
