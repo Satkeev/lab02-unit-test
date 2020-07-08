@@ -1,9 +1,11 @@
 ﻿using System;
 //using Xunit;
+
 namespace lab02_unit_test
-{
-        
-        public class UnitTest1
+{ 
+
+
+        public class Program
         {
             public static decimal balance = 500m;
 
